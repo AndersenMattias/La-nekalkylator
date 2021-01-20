@@ -13,8 +13,8 @@ const outputFromSum = document.getElementById("sumValue");
 const outputFromYear = document.getElementById("yearValue");
 
 function calculateCost() {
-  totalCost.innerHTML = (sumSlider.value * 1.054);
-  monthlyCost.innerHTML = (sumSlider.value * 1.054) / (yearSlider.value * 12);  
+  totalCost.innerHTML = `${(sumSlider.value * 1.054)} Euro`;
+  monthlyCost.innerHTML = `${parseFloat((sumSlider.value * 1.054) / (yearSlider.value * 12)).toFixed(2)} Euro`;  
 }
 
 sumSlider.oninput = function(){

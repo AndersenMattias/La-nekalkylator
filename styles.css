@@ -10,3 +10,8 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
+#perMonth, #totalCost {
+  padding: 20px;
+  font-size: 2rem;
+}

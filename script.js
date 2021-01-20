@@ -4,7 +4,7 @@ const yearSlider = document.getElementById("yearSlider");
 const sumOutput = document.getElementById("sumBox");
 const yearOutput = document.getElementById("yearBox");
 
-const costs = document.getElementById('cost-container');
+const costs = document.querySelector('.cost-container');
 
 const totalCost = document.getElementById("totalCost");
 const monthlyCost = document.getElementById("perMonth")
@@ -13,8 +13,8 @@ const outputFromSum = document.getElementById("sumValue");
 const outputFromYear = document.getElementById("yearValue");
 
 function calculateCost() {
-  totalCost.innerHTML = `${(sumSlider.value * 1.054)} Euro`;
-  monthlyCost.innerHTML = `${parseFloat((sumSlider.value * 1.054) / (yearSlider.value * 12)).toFixed(2)} Euro`;  
+  totalCost.innerHTML = `${(sumSlider.value * 1.054)} Riksdaler 💲 🤑`;
+  monthlyCost.innerHTML = `${parseFloat((sumSlider.value * 1.054) / (yearSlider.value * 12)).toFixed(2)} Riksdaler 💲 🤑`;  
 }
 
 sumSlider.oninput = function(){

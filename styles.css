@@ -1,17 +1,42 @@
 body {
-  background-color: grey;
+  background-color: rgb(237, 228, 228);
 }
 
 h1 {
   text-align: center;
 }
 
-.sum-container, .year-container, .your-costs, #cost-container {
+.sum-container, .year-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sumBoxDiv, .yearBoxDiv {
   display: flex;
   justify-content: center;
 }
 
-#perMonth, #totalCost {
-  padding: 20px;
-  font-size: 2rem;
+.year-container, .your-costs {
+  display: flex;
+  justify-content: center;
 }
+
+input[type='number']{
+  width: 200px;
+}
+
+#yearRate {
+  text-align: center;
+}
+
+
+.cost-container {
+  margin: auto;
+  text-align: center;
+  border: 5px solid black;
+  font-size: 50px;
+  width: 800px;
+  background-color: rgb(48, 110, 203);
+}
+

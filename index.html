@@ -10,15 +10,31 @@
 
     <h1>Mortgage calculator</h1>
 
-    <div class="sumSlideContainer">
-      <input type="range" min="0" max="500000" value="0" class="slider" id="sumSlider" step="10000" oninput="sum.value=sumSlider.value">
+   
+    <div class="sum-container">
+      <input type="range" min="0" max="500000" value="0" class="slider" id="sumSlider" step="10000" >
   
-      <label for="sum">Summa:</label>
-      <input type="number" id="sum" min="0" max="500000" step="10000" value="0" oninput="sumSlider.value=sum.value">
+      <label for="sumBox">Sum:</label>
+      <input type="number" id="sumValue" min="0" max="500000" step="10000" value="0" >
+    </div>
+
+    <div class="year-container">
+      <input type="range" min="1" max="5" value="1" class="slider" id="yearSlider" step="1" >
+     
+      <label for="yearBox">Year:</label>
+      <input type="number" id="yearValue" min="1" max="5" step="1" value="1" >
+    </div>
+  
+
+    <h1>Your Costs</h1>
+    <div id="cost-container">
+        <p>Per month: <p id="perMonth"></p></p>
+        <p>Total cost (amortization + interest): <p id="totalCost"></p></p>
     </div>
 
 
-    <div class="cost-container"></div>
+
+
     
 
     <script src="script.js"></script>
